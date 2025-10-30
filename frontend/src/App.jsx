@@ -5,6 +5,9 @@ import MyProfile from './pages/MyProfile'
 import MyAppointment from './pages/MyAppointment'
 import Contact from './pages/Contact'
 import About from './pages/About'
+import Login from './pages/Login'
+import Doctors from './pages/Doctors.jsx'
+import Appointment from './pages/Appointment.jsx'
 
 const App = () => {
   return (
@@ -18,6 +21,7 @@ const App = () => {
            <Route path ='/contact'element={<Contact/>} />
            <Route path ='/my-profile'element={<MyProfile/>} />
            <Route path ='/my-appointment'element={<MyAppointment/>} />
+           <Route path ='/appointment/:docId'element={<Appointment/>} />
        </Routes>
     </div>
 
